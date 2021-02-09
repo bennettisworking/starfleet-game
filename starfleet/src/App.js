@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import './App.css';
 import API_service from './API_service.js';
+import Header from './Header.js';
 import Home from './Home.js';
 import ChoosePlayerShip from './ChoosePlayerShip.js';
 
@@ -41,6 +42,7 @@ class App extends Component {
     render = () => {
     return (
       <div className="App">
+        <Header/>
         <Home/>
         <ChoosePlayerShip opponent={this.state.computerShip} data={this.state.shipData}/>
       </div>

@@ -18,7 +18,6 @@ app.listen(3000, () => {
 });
 
 app.get("/ships", (req, res, next) => {
- //res.json(["Tony","Lisa","Michael","Ginger","Food"]);
  pool.getConnection(function(err, connection) {
  	connection.query("SELECT * FROM ships", function (err, result, fields) {
   connection.release();

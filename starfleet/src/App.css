@@ -39,17 +39,60 @@
 
 /* ------- */
 
-h1, h3, p {
+h1, h3, h4, p {
   color: white;
 }
 
 .container {
   position: absolute;
   background: black;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  top: 70px;
 }
 
 .home {
   z-index: 10;
+}
+
+.header {
+  background: #232323;
+  height: 69px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: left;
+  padding: 0 15px;
+  border-bottom: 1px solid rgb(80, 121, 197);
+}
+
+.header__image {
+  width: 270px;
+  margin-top: 18px;
+}
+
+.stats-display {
+  display: flex;
+  justify-content: center;
+}
+
+.stats-display__stats {
+  text-align: left;
+  margin-left: 20px;
+  padding: 10px;
+  background: #222;
+  min-width: 140px;
+}
+
+.stats-display__stat {
+  font-size: 11px;
+  margin: 2px 0 4px;
+}
+
+.stats-display__ship-class {
+  margin: 0 0 10px;
+}
+
+.stats-display__image {
+  width: 300px;
 }
