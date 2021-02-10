@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import './App.css';
+import {
+  Container,
+  PageTitle
+} from './StyledComponents';
+//import './App.css';
 
 class Home extends Component {
 
@@ -15,11 +19,11 @@ class Home extends Component {
 
 	render = () => {
 	 return (
-    <div className="container home" style={{ display: this.state.showHome ? 'block' : 'none'}}>
-	    <h1>Starfleet Showdown</h1>
+    <Container visible={this.state.showHome}>
+	    <PageTitle>Starfleet Showdown</PageTitle>
 	    <p>Pit famous ships from the Star Trek universe against each other in close combat</p>
 	    <button onClick={this.homeClickHandler}>meow</button>
-    </div>
+    </Container>
   )
 	}
 
