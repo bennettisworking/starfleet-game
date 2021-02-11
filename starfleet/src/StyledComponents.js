@@ -7,7 +7,7 @@ const headerSize = 70;
 export const Container = styled.div`
   position: absolute;
   background: ${bgColor};
-  color: ${textColor};
+  //color: ${textColor};
   height: 100%;
   width: 100%;
   top: ${headerSize}px;
